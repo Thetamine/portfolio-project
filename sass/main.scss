@@ -44,20 +44,25 @@
 		}
 	}
 } 
+@mixin bodyFont() {
+	font-family:  quicksand, sans-serif;
+	padding: 0 15px;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	text-align: center;
+}
+@mixin bebasFont {
+	font-family:  Bebas, sans-serif;
+	padding: 0 15px;
+	font-size: 0.9rem;
+	line-height: 1.3rem;
+	text-align: center;
+}
 // header styles
 header, 
 header h1, 
 header nav ul li, {
 	@include linxGlobal(lightgrey, lightgrey, lightgrey, none);
-}
-#full-screen-wrapper {
-	height: 100vh;
-	width: 100vw;
-	background-image: url('../img/mosaic-4k.jpg');
-	background-repeat: no-repeat;
-	background-size: 1000px;
-	background-position: top center;
-	overflow: hidden;
 }
 header {
 	display: flex;
@@ -158,28 +163,104 @@ header {
 body {
 	background-color: black;
 	color: white;
-}
-main {
-	@include linxGlobal(white, white, white, none);
-	h2 {
-		margin-bottom: 20px;
-	}
-	a {
-		display: flex;
-		justify-content: center;
-		font-family: quicksand, sans-serif;
-		margin: 0 20%;
-		margin-bottom: 30px;
-	}
-	#home-body-text {
-		font-family:  quicksand, sans-serif;
-		padding: 0 15px;
-		font-size: 0.9rem;
-		line-height: 1.3rem;
-		text-align: center;
+	#full-screen-wrapper {
+		width: 100vw;
+		background-image: url('../img/mosaic-4k.jpg');
+		background-repeat: no-repeat;
+		background-size: 1000px;
+		background-position: top center;
+		@include linxGlobal(white, white, white, none);
+		#home-fullscreen-section {
+			height: 100vh;
+			main {
+				@include linxGlobal(white, white, white, none);
+				h2 {
+					margin-bottom: 20px;
+				}
+				a {
+					display: flex;
+					justify-content: center;
+					font-family: quicksand, sans-serif;
+					margin: 0 20%;
+					margin-bottom: 30px;
+				}
+				#home-body-text {
+					@include bodyFont();	
+				}
+			}
+		}
+		aside {
+			#gypsy-coture-portfolio {
+				width: 100vw;
+				height: 100vh;
+				background-image: url('./../img/gypsy-coture-case/gypsy-coture-background-finished.jpg');
+				background-size: 1070px;
+				background-position: top center;
+				background-repeat: no-repeat;
+				display: flex;
+				justify-content: center;
+				position: relative;
+				margin-bottom: 50px;
+				@include linxGlobal(black, black, black, none);
+				img {
+					height: 120px;
+					position: absolute;
+					top: 150px;
+				}
+				.case-study-button {
+					height: 20px;
+					padding: 10px 25px;
+					border: 2px solid black;
+					@include vendor-prefix(border-radius, 30px);
+					position: absolute;
+					font-family: quicksand, sans-serif;
+					top: 300px;
+				}
+			}
+		}
+		#contact-section {
+			font-family: quicksand, sans-serif;
+			text-align: center;
+			a {
+				display: flex;
+				justify-content: center;
+				margin: 0 20%;
+				margin-bottom: 30px;
+			}
+			p {
+				@include bodyFont();
+				padding-bottom: 20px;
+				border-bottom: 2px solid yellow;
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
+// footer Styles
+footer {
+	@include bodyFont();
+	text-align: center;
+	background-color: darkslategray;
+	padding: 15px 0;
+	nav {
+		#footer-navigation {
+			list-style: none;
+			padding: 0;
+			margin-top: 0;
+			li {
+				display: inline-flex;
+				justify-content: center;
+				@include bebasFont();
+				font-size: 1.1rem;
+				padding: 2px;
+			}
+		}
+	}
+	p {
+		margin: 0;
+	}
+}
 // class styles
 .hidden {
 	display: none

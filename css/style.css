@@ -414,15 +414,6 @@ header nav ul li a {
   header nav ul li a:active {
     text-decoration: none; }
 
-#full-screen-wrapper {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../img/mosaic-4k.jpg");
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  background-position: top center;
-  overflow: hidden; }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -503,31 +494,127 @@ header {
 body {
   background-color: black;
   color: white; }
+  body #full-screen-wrapper {
+    width: 100vw;
+    background-image: url("../img/mosaic-4k.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: top center; }
+    body #full-screen-wrapper a {
+      color: white;
+      text-decoration: none; }
+      body #full-screen-wrapper a:visited {
+        color: white; }
+      body #full-screen-wrapper a:hover {
+        color: white;
+        text-decoration: none; }
+      body #full-screen-wrapper a:active {
+        text-decoration: none; }
+    body #full-screen-wrapper #home-fullscreen-section {
+      height: 100vh; }
+      body #full-screen-wrapper #home-fullscreen-section main a {
+        color: white;
+        text-decoration: none; }
+        body #full-screen-wrapper #home-fullscreen-section main a:visited {
+          color: white; }
+        body #full-screen-wrapper #home-fullscreen-section main a:hover {
+          color: white;
+          text-decoration: none; }
+        body #full-screen-wrapper #home-fullscreen-section main a:active {
+          text-decoration: none; }
+      body #full-screen-wrapper #home-fullscreen-section main h2 {
+        margin-bottom: 20px; }
+      body #full-screen-wrapper #home-fullscreen-section main a {
+        display: flex;
+        justify-content: center;
+        font-family: quicksand, sans-serif;
+        margin: 0 20%;
+        margin-bottom: 30px; }
+      body #full-screen-wrapper #home-fullscreen-section main #home-body-text {
+        font-family: quicksand, sans-serif;
+        padding: 0 15px;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-align: center; }
+    body #full-screen-wrapper aside #gypsy-coture-portfolio {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("./../img/gypsy-coture-case/gypsy-coture-background-finished.jpg");
+      background-size: 1070px;
+      background-position: top center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin-bottom: 50px; }
+      body #full-screen-wrapper aside #gypsy-coture-portfolio a {
+        color: black;
+        text-decoration: none; }
+        body #full-screen-wrapper aside #gypsy-coture-portfolio a:visited {
+          color: black; }
+        body #full-screen-wrapper aside #gypsy-coture-portfolio a:hover {
+          color: black;
+          text-decoration: none; }
+        body #full-screen-wrapper aside #gypsy-coture-portfolio a:active {
+          text-decoration: none; }
+      body #full-screen-wrapper aside #gypsy-coture-portfolio img {
+        height: 120px;
+        position: absolute;
+        top: 150px; }
+      body #full-screen-wrapper aside #gypsy-coture-portfolio .case-study-button {
+        height: 20px;
+        padding: 10px 25px;
+        border: 2px solid black;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -o-border-radius: 30px;
+        -ms-border-radius: 30px;
+        position: absolute;
+        font-family: quicksand, sans-serif;
+        top: 300px; }
+    body #full-screen-wrapper #contact-section {
+      font-family: quicksand, sans-serif;
+      text-align: center; }
+      body #full-screen-wrapper #contact-section a {
+        display: flex;
+        justify-content: center;
+        margin: 0 20%;
+        margin-bottom: 30px; }
+      body #full-screen-wrapper #contact-section p {
+        font-family: quicksand, sans-serif;
+        padding: 0 15px;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 2px solid yellow;
+        margin-bottom: 0; }
 
-main a {
-  color: white;
-  text-decoration: none; }
-  main a:visited {
-    color: white; }
-  main a:hover {
-    color: white;
-    text-decoration: none; }
-  main a:active {
-    text-decoration: none; }
-main h2 {
-  margin-bottom: 20px; }
-main a {
-  display: flex;
-  justify-content: center;
-  font-family: quicksand, sans-serif;
-  margin: 0 20%;
-  margin-bottom: 30px; }
-main #home-body-text {
+footer {
   font-family: quicksand, sans-serif;
   padding: 0 15px;
   font-size: 0.9rem;
   line-height: 1.3rem;
-  text-align: center; }
+  text-align: center;
+  text-align: center;
+  background-color: darkslategray;
+  padding: 15px 0; }
+  footer nav #footer-navigation {
+    list-style: none;
+    padding: 0;
+    margin-top: 0; }
+    footer nav #footer-navigation li {
+      display: inline-flex;
+      justify-content: center;
+      font-family: Bebas, sans-serif;
+      padding: 0 15px;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
+      text-align: center;
+      font-size: 1.1rem;
+      padding: 2px; }
+  footer p {
+    margin: 0; }
 
 .hidden {
   display: none; }
